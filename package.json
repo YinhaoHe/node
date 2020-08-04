@@ -1,0 +1,27 @@
+{
+  "name": "node_dev_playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YinhaoHe/nodeDev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YinhaoHe/nodeDev/issues"
+  },
+  "homepage": "https://github.com/YinhaoHe/nodeDev#readme",
+  "dependencies": {
+    "mongoose": "^5.9.27",
+    "underscore": "^1.10.2"
+  }
+}
