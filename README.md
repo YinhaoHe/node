@@ -273,6 +273,135 @@ console.log("Listening on port 3000...");
 
 # NPM
 
+## Resolve a module
+
+`require()` will resolve the module in the following order:
+
+`var _ = require("underscore");`
+
+- Core module
+- File or folder
+- node_modules
+
+[Back to top](#Node)
+
+---
+
+## Semantic Versioning
+
+- **Major.Minor.Patch**
+- `^4.13.6` === `4.x.x`
+- `~1.8.3` === `1.8.x`
+
+[Back to top](#Node)
+
+---
+
+## Listing the Installed Packages
+
+- `npm list` - to view every package's and its dependency's version
+- `npm list --depth=0` - Only to view your packages' dependency
+
+[Back to top](#Node)
+
+---
+
+## Viewing Registry info for a Package
+
+- `npm view mongoose` - to view everything(all the meta data) about this package
+- `npm view mongoose dependencies` - Only to view the dependency
+- `npm view mongoose versions` - To view all the versions of this package
+
+[Back to top](#Node)
+
+---
+
+## Installing a Specific Version of a Package
+
+- `npm i mongoose@2.4.2` - install the exact version of this package
+
+[Back to top](#Node)
+
+---
+
+## Updating Local Packages
+
+- `npm outdated ` - to view the newest package version
+- `npm update` - only update the minor and patch version packages; **DOES NOT** update Major version update
+- `npm i -g npm-check-updates` - A tool to help with update everything
+- After install `npm-check-updates`, run `ncu -u`, then run `npm i` - TO update EVERYTHING
+
+[Back to top](#Node)
+
+---
+
+## DevDependencies
+
+- `npm i jshint --save-dev` - install development dependencies
+
+[Back to top](#Node)
+
+---
+
+## Uninstall a Package
+
+- `npm un mongoose` - to uninstall a package
+
+[Back to top](#Node)
+
+---
+
+## Working with Global Packages
+
+- `npm i -g npm` - install globally
+- `npm -g outdated` - find outdated packages globally
+
+[Back to top](#Node)
+
+---
+
+## Publishing a Package
+
+- `npm login`
+- `npm publish`
+
+[Back to top](#Node)
+
+---
+
+## Updating a Published Package
+
+- `npm version major` - You need to update your version first then publish
+- `npm publish`
+
+[Back to top](#Node)
+
+---
+
+>## NPM
+>
+>- Every Node application has a package.json file that includes metadata about the application. This includes the name of the application, its version, dependencies, etc.
+>- We use NPM to download and install 3rd-party packages from NPM registry:
+>- All the installed packages and their dependencies are stored under node_modules folders. This folder should be excluded from the source control.
+>- Node packages follow semantic versioning: major.minor.patch 
+>- Useful NPM commands are:
+>  - Install a package: `npm i <packageName>`
+>  - Install a specific version of a package: `npm i <packageName>@<version>`
+>  - Install a package as a development dependency: `npm i <packageName> —save-dev`
+>  - Uninstall a package: `npm un <packageName>`
+>  - List installed packages: `npm list —depth=0`
+>  - View outdated packages: `npm outdated`
+>  - Update packages: `npm update`
+>- To install/uninstall packages globally, use `-g` flag.
+
+[Back to top](#Node)
+
+---
+
+
+
+
+
 
 
 
